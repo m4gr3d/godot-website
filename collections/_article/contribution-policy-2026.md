@@ -17,7 +17,7 @@ of open PRs is a healthy sign that:
 3.	We are dedicated to high code quality.
 
 But ultimately, a large part of the backlog comes from the fact that the number
-of qualified reviewers is small, reviewing PRs is not fun, and we can't keep up
+of qualified reviewers is small, reviewing PRs is demanding, and we can't keep up
 with everything coming in. 
 
 This problem is compounded by the recent increase in AI-generated contributions,
@@ -25,15 +25,7 @@ both by AI agents and by humans submitting AI generated code. The amount of
 effort required to make a PR has gone down (and number of PRs has increased as a
 result), while the amount of work to review PRs and the amount of people
 available to review has stayed the same. This reviewer shortage was already a
-problem, but it was one that we successfully ignored. We can no longer ignore it.
-
-AI contributions have the added pain of being demoralizing. Reviewing PRs is
-already thankless work, but it is rewarding because reviewers generally feel
-that their efforts are contributing to educating a new contributor (who may
-become a future maintainer/reviewer). If your feedback on PRs is just being
-absorbed by a machine and not going towards mentoring a potential future
-maintainer, it becomes much harder to justify spending your free time on PR
-review.
+problem, now we can no longer ignore it.
 
 It is time for us to recognize that these problems aren't going away and
 therefore we need to take steps to reduce the burden on maintainers while
@@ -45,9 +37,7 @@ including adding a stricter policy on AI contributions. The Foundation board
 and maintainers have been discussing a new policy for several months. Our focus will be on:
 
 - **Encouraging new contributors to become future maintainers, that involves teaching and growing the understanding of new contributors.**
-    - LLMs (and new contributors heavily relying on AI) can't learn from specific feedback and thus can't benefit from maintainers providing feedback.
 - **Ensuring all contributions are made by humans who can take responsibility for their code and be able and willing to fix it when needed.**
-    - AI cannot take responsibility, and we can't trust heavy users of AI to understand their code enough to fix it.
 - **Adding barriers to low-effort slop.**
     - Unfortunately, this means we need to add barriers to contribution, but want to do it in a way that does not cut off our maintainer pipeline.
 - **Increasing the incentive to review PRs.**
@@ -60,18 +50,19 @@ re-factoring from new contributors without explicit permission from maintainers.
 This ensures that new contributors take the time to learn the codebase and
 engage with maintainers to build trust by working on bug fixes and documentation
 before diving into significant projects. We consider a new contributor to be
-someone with 3 or fewer merged pull requests.
+someone with at least 3 or more merged pull requests, but note that each team has
+significant say in how this is evaluated.
 
 Shortly we will amend our AI policy to align with the values described above. Our
 amended AI policy will include that:
-- **All AI use must be disclosed**
+- **All AI use for code authoring must be disclosed**
     - This is the same as in our [current policy](https://contributing.godotengine.org/en/latest/pull_requests/pull_request_guidelines.html#ai-assisted-contributions)
 - **Only trusted contributors can use AI**
     - New contributors are not permitted to use AI to contribute until they have shown that they understand the codebase.
     - We don’t have an exact criteria for when someone becomes a trusted contributor, but at minimum it means:
         - Having several merged pull requests
-        - Contributing regularly for at least 6 months
-        - Being active on the Godot chat
+        - Contributing regularly
+        - Being active on the Godot chat and engaged with the team and area of planned contribution
 - **Absolutely no AI generated comments on Github/issues/PR descriptions/PR reviews/discussions/chat messages** (e.g. all communication must be human-to-human)
     - This is basic principle of respect. Our maintainers are volunteering their time, so please be respectful.
     - Machine translations are still acceptable as long as the original content was written by a human.
